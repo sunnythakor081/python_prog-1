@@ -5,14 +5,7 @@ def count1(price,note,n):
          n+=1
     return n-1    
 note=[500,200,100,50,20,10,5,2,1]
-price=input("Enter price:")
-
-while(1):
- if(not price.isnumeric()):
-    price=input("Enter price: ")
- else:
-    break
-price=int(price)
+price=int(input("Enter price:"))
 
 def check(price,poin):
     while(price>0):
@@ -23,10 +16,6 @@ def check(price,poin):
       print("Note {}: {}".format(note[poin],n))
       price=price-n*note[poin]
       poin+=1
-
-
-
-
 
 if(price>=500):
   print("----------------")
